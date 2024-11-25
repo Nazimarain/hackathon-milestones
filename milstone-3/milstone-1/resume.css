@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+    
+}
+
+body{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.fa-address-book,
+.fa-user-graduate,
+.fa-language,
+.fa-briefcase,
+.fa-users,
+.fa-laptop,
+.fa-people-arrows{
+    color: #57234F;
+    margin-right: 3%;
+}
+
+.resumeDiv{
+    width: 70%;
+    max-width: 1100px;
+    margin: auto;
+    border: 2px solid black;
+    background-color: white;
+}
+
+
+
+header{
+    width: 100%;
+    background-color: #742F6A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+
+header img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    
+    
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+
+    
+}
+
+.content aside{
+    width: 30%;
+    background-color: #F3E2F1;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+
+.content aside p{
+    padding: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+
+.contact, 
+.education, 
+#skill,
+.language.btnDiv,
+.objective,
+.refrence {
+    margin-bottom: 20px;
+}
+
+
+
+.contact h2,
+.education h2,
+#skills h2,
+.language h2,
+.experience h2,
+.refrence h2,
+.objective h1{
+    border-bottom: 1px solid #913B84;
+    margin-bottom: 30px;
+    padding-bottom: 3px;
+    color: #913B84;
+    letter-spacing: 3px;
+}
+
+.education{
+    line-height: 20px;
+}
+  
+#skills ul{
+    margin: 18px;
+}
+
+.main-content{
+    padding-left: 50px;
+    width: 70%;
+    background-color: white;
+}
+
+.experience-items{
+    margin-bottom: 65px;
+}
+   
+.experience-items p{
+    margin-bottom: 5px;
+}
+
+.experience-items ul{
+    margin-left: 18px;
+    margin-top: 15px;
+}
+
+.btnDiv{
+    width: 70%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+@media print {
+    .btnDiv{
+        display: none;
+    }
+}
+
+#skills_btn,
+#print_btn{
+    font-size: 20px;
+    border: none;
+    padding: 10px 16px;
+    margin: 10px;
+    border-radius: 8px;
+    color: white;
+    background-color: #913B84;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: #360f30;
+        transform: scale(0.95);
+    }
+}
+
+.hide{
+    display: none;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header img {
+        margin-top: 10px;
+    }
+
+    .content aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content main {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .resumeDiv {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .content aside {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content main {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .resumeDiv {
+        width: 95%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .content aside {
+        width: 100%;
+    }
+
+    .content main {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .resumeDiv {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*@media (max-width: 786px){
+    .content{
+        flex-direction:column;
+    }
+
+    aside, .main-content{
+        width: 100%;
+    }
+
+}
